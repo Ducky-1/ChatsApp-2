@@ -14,6 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ChatsApp"
         android:usesCleartextTraffic="true">
+        <activity android:name=".UserSettingsActivity"></activity>
         <activity android:name=".Activities.GroupChatActivity" />
         <activity
             android:name=".Activities.ChatActivity"

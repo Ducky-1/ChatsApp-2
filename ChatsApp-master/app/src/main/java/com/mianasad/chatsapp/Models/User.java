@@ -1,7 +1,7 @@
 package com.mianasad.chatsapp.Models;
 
 public class User {
-    private String uid, name, phoneNumber, profileImage;
+    private String uid, name, phoneNumber, profileImage, status;
     public User() {
 
     }
@@ -10,6 +10,14 @@ public class User {
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.profileImage = profileImage;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     public String getUid() {

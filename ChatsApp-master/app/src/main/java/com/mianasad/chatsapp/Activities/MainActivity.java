@@ -29,6 +29,7 @@ import com.mianasad.chatsapp.Models.UserStatus;
 import com.mianasad.chatsapp.R;
 import com.mianasad.chatsapp.Models.User;
 import com.mianasad.chatsapp.Adapters.UsersAdapter;
+import com.mianasad.chatsapp.UserSettingsActivity;
 import com.mianasad.chatsapp.databinding.ActivityMainBinding;
 import java.util.ArrayList;
 import java.util.Date;
@@ -249,9 +250,8 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Search clicked.", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.settings:
-                Toast.makeText(this, "Settings Clicked.", Toast.LENGTH_SHORT).show();
-//                Intent i = new Intent(MainActivity.this , SettingsActivity.class);
-//                startActivity(i);
+                Intent i = new Intent(MainActivity.this , UserSettingsActivity.class);
+                startActivity(i);
                 break;
         }
         return super.onOptionsItemSelected(item);
